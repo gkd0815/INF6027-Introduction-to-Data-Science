@@ -2,7 +2,7 @@
 
 # Employment and Unemployment Rate Plot
 # Load data from CSV file
-data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R语言/data set/employment and unemployment rate.csv")
+data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R/data set/employment and unemployment rate.csv")
 
 # Print column names to verify if correct
 print(colnames(data))
@@ -77,7 +77,7 @@ legend("bottom", inset = -0.25, legend = c("Employment Rate (Historical)",
 
 # Employment Rate by Gender Prediction Plot
 # Load data from CSV file
-data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R语言/data set/Sex and population and years.csv")
+data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R/data set/Sex and population and years.csv")
 
 # Print column names to verify if correct
 print(colnames(data))
