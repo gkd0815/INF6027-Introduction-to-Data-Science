@@ -7,7 +7,7 @@ library(patchwork)
 
 
 # Read actual data file
-data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R语言/data set/employment and unemployment rate.csv")
+data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R/data set/employment and unemployment rate.csv")
 
 # Ensure column names match, convert 'Years' to Date type
 # assuming each year starts on January 1, to prepare for time series plotting.
@@ -93,7 +93,7 @@ library(dplyr)
 library(plotly)
 
 # Load the dataset
-data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R语言/data set/Sex and population and years.csv")
+data <- read.csv("/Users/gkd0815/Documents/Data Visualization/R/data set/Sex and population and years.csv")
 
 # 'Years' -> Date ,assuming Jan. 1st
 data$Years <- as.Date(paste0(data$Years, "-01-01"))
@@ -189,7 +189,7 @@ library(lubridate)
 library(scales)
 
 # Define the file path
-excel_path <- "/Users/gkd0815/Documents/Data Visualization/R语言/data set/Vacancy and Unemployment.xlsx"
+excel_path <- "/Users/gkd0815/Documents/Data Visualization/R/data set/Vacancy and Unemployment.xlsx"
 
 # Load and inspect the data
 # Loads the Excel file from the specified path and stores it in data_raw
@@ -272,8 +272,8 @@ library(geojsonsf) # For reading GeoJSON files
 library(purrr)     # For functional programming utilities
 
 # Define file paths for Excel and JSON data
-excel_path <- "/Users/gkd0815/Documents/Data Visualization/R语言/data set/2018 Turism Industry in UK.xls"
-json_path <- "/Users/gkd0815/Documents/Data Visualization/R语言/data set/UK.json"
+excel_path <- "/Users/gkd0815/Documents/Data Visualization/R/data set/2018 Turism Industry in UK.xls"
+json_path <- "/Users/gkd0815/Documents/Data Visualization/R/data set/UK.json"
 
 # Read the Excel file and clean up the data
 employment_data <- read_excel(excel_path, col_names = FALSE)  # Read without headers initially
